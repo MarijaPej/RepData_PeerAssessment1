@@ -52,9 +52,10 @@ the median is `r median.daily.steps`.
 average.interval <- aggregate(steps ~ interval, active, mean, na.rm = TRUE)
 ggplot(average.interval, aes(x=interval,y=steps)) + geom_line(color="cadetblue",size=1) +  
   labs(x="5-Minute Intervals", y="Average Number of Steps")
-
 ```
+
 2) Maximum number of steps
+
 ```{r part3_2, echo=TRUE}
 max.steps.interval<-average.interval[which.max(average.interval$steps), ] 
 max.steps.interval

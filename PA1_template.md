@@ -55,7 +55,9 @@ ggplot(average.interval, aes(x=interval,y=steps)) + geom_line(color="cadetblue",
 ```
 
 ![](PA1_template_files/figure-html/part3_1-1.png) 
+
 2) Maximum number of steps
+
 
 ```r
 max.steps.interval<-average.interval[which.max(average.interval$steps), ] 
